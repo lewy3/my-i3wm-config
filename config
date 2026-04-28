@@ -1,0 +1,61 @@
+#put this in your configuration file
+
+set $mod Mod4
+font pango:JetBrains Mono 10
+
+# terminal
+bindsym $mod+Return exec alacritty
+
+# launcher
+bindsym $mod+d exec rofi -show drun
+
+# zamykanie okna
+bindsym $mod+Shift+q kill
+
+# restart i3
+bindsym $mod+Shift+r restart
+
+# wyjście
+bindsym $mod+Shift+e exit
+
+# focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# podział okien
+bindsym $mod+v split v
+bindsym $mod+b split h
+
+# fullscreen
+bindsym $mod+f fullscreen toggle
+
+# workspace
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+
+# uruchamianie
+exec_always feh --bg-scale /home/xfxfc/Dokumenty/laptop/loveit.jpg
+
+# === TOP BAR ===
+bar {
+    position top
+    status_command i3status
+
+    colors {
+        background #111111
+        statusline #eeeeee
+        separator  #666666
+
+        focused_workspace  #444444 #444444 #ffffff
+        active_workspace   #222222 #222222 #aaaaaa
+        inactive_workspace #111111 #111111 #888888
+        urgent_workspace   #900000 #900000 #ffffff
+    }
+}
