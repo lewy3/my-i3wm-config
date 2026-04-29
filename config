@@ -1,4 +1,4 @@
-#put this in your configuration file
+# wklej to do ~/.config/i3/config
 
 set $mod Mod4
 font pango:JetBrains Mono 10
