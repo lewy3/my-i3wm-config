@@ -48,8 +48,8 @@ exec --no-startup-id picom
 exec --no-startup-id xinput set-prop 9 "libinput Accel Speed" -0.8
 
 #rozdzielczosc i częstotliwość (hz)
-#wklej poniższą komende do terminala jeśli chcesz dostosować rozdzielczość i hz żeby znaleść swój monitor wpisz "xrandr list"
-#xrandr --output NAZWA_WYJŚCIA --mode ROZDZIELCZOŚĆ --rate 100.00
+#jeśli chcesz zmienić rozdzielczość i hz to poprostu usuń # i podmień NAZWA_WYJŚCIA i ROZDZIELCZOŚĆ, nazwę wejścia znajdziesz wpisując w terminalu xrandr
+#exec --no-startup-id xrandr --output NAZWA_WYJŚCIA --mode ROZDZIELCZOŚĆ --rate 100.00
 
 # === TOP BAR ===
 bar {
