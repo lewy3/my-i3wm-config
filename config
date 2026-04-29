@@ -42,6 +42,14 @@ bindsym $mod+3 workspace $ws3
 
 # uruchamianie
 exec_always feh --bg-scale /home/xfxfc/Dokumenty/laptop/loveit.jpg
+exec --no-startup-id picom
+
+#czułość myszy
+exec --no-startup-id xinput set-prop 9 "libinput Accel Speed" -0.8
+
+#rozdzielczosc i częstotliwość (hz)
+#wklej poniższą komende do terminala jeśli chcesz dostosować rozdzielczość i hz żeby znaleść swój monitor wpisz "xrandr list"
+#xrandr --output NAZWA_WYJŚCIA --mode ROZDZIELCZOŚĆ --rate 100
 
 # === TOP BAR ===
 bar {
