@@ -1,176 +1,47 @@
-alacritty
-aurorae
-base
-base-devel
-bluedevil
-breeze
-breeze-cursors
-breeze-gtk
-breeze-plymouth
-cava
-clock-tui
-discord
-discover
-dkms
-dmenu
-drkonqi
-dunst
-efibootmgr
-fastfetch
-feh
-flatpak-kcm
-gimp
-git
-grim
-grub
-gst-plugin-pipewire
-htop
-i3-wm
-i3blocks
-i3lock
-i3status
-intel-ucode
-kactivitymanagerd
-kde-cli-tools
-kde-gtk-config
-kdecoration
-kdeplasma-addons
-kgamma
-kglobalacceld
-kinfocenter
-kitty
-kmenuedit
-knighttime
-kpipewire
-krdp
-kscreen
-kscreenlocker
-ksshaskpass
-ksystemstats
-kwallet-pam
-kwayland
-kwin
-kwin-x11
-kwrited
-layer-shell-qt
-libkscreen
-libksysguard
-libplasma
-libpulse
-librewolf-bin
-libva-nvidia-driver
-lightdm
-lightdm-gtk-greeter
-linux
-linux-firmware
-linux-headers
-milou
-nano
-network-manager-applet
-networkmanager
-nvidia-open-dkms
-ocean-sound-theme
-oxygen
-oxygen-cursors
-oxygen-sounds
-picom
-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-plasma-activities
-plasma-activities-stats
-plasma-browser-integration
-plasma-desktop
-plasma-disks
-plasma-firewall
-plasma-integration
-plasma-keyboard
-plasma-login-manager
-plasma-nm
-plasma-pa
-plasma-sdk
-plasma-systemmonitor
-plasma-thunderbolt
-plasma-vault
-plasma-welcome
-plasma-workspace
-plasma-workspace-wallpapers
-plasma5support
-plymouth-kcm
-polkit-kde-agent
-powerdevil
-print-manager
-prismlauncher-git
-qqc2-breeze-style
-qt5-wayland
-qt6-wayland
-rofi
-sddm
-sddm-kcm
-slurp
-smartmontools
-sof-firmware
-spectacle
-spotify
-steam
-sudo
-systemsettings
-ttf-dejavu
-ttf-jetbrains-mono
-ttf-liberation
-uwsm
-vim
-visual-studio-code-bin
-vlc
-wacomtablet
-wget
-wireplumber
-wofi
-wpa_supplicant
-xdg-desktop-portal-hyprland
-xdg-desktop-portal-kde
-xdg-utils
-xf86-video-vesa
-xorg-bdftopcf
-xorg-docs
-xorg-font-util
-xorg-fonts-100dpi
-xorg-fonts-75dpi
-xorg-iceauth
-xorg-mkfontscale
-xorg-server
-xorg-server-devel
-xorg-server-src
-xorg-server-xephyr
-xorg-server-xnest
-xorg-server-xvfb
-xorg-sessreg
-xorg-smproxy
-xorg-x11perf
-xorg-xbacklight
-xorg-xcmsdb
-xorg-xcursorgen
-xorg-xdpyinfo
-xorg-xdriinfo
-xorg-xev
-xorg-xgamma
-xorg-xhost
-xorg-xinit
-xorg-xinput
-xorg-xkbevd
-xorg-xkbutils
-xorg-xkill
-xorg-xlsatoms
-xorg-xlsclients
-xorg-xpr
-xorg-xrefresh
-xorg-xset
-xorg-xsetroot
-xorg-xvinfo
-xorg-xwd
-xorg-xwininfo
-xorg-xwud
-yay
-yay-debug
-zram-generator
+## Wymagane pakiety dla i3wm
+
+### Podstawy i3
+- `i3-wm` - menedżer okien
+- `i3lock` - blokada ekranu
+- `i3status` - pasek stanu
+- `i3blocks` - rozszerzalny pasek stanu
+
+### Terminal i edytory
+- `alacritty` - terminal GPU-accelerated
+- `kitty` - alternatywny terminal
+- `nano` / `vim` - edytory tekstu
+
+### Narzędzia systemowe
+- `base` `base-devel` `linux` `linux-headers` `linux-firmware`
+- `git` `yay` - zarządzanie pakietami i AUR
+- `networkmanager` `network-manager-applet` - sieć
+- `pipewire` `pipewire-alsa` `pipewire-pulse` `wireplumber` - dźwięk
+- `lightdm` `lightdm-gtk-greeter` - menedżer logowania
+- `dkms` `nvidia-open-dkms` - sterowniki NVIDIA
+
+### Wygląd i efekty
+- `picom` - kompozytor (przezroczystość, cienie)
+- `feh` - tapety
+- `dunst` - powiadomienia
+- `rofi` / `wofi` - launcher aplikacji
+- `dmenu` - prosty launcher
+
+### Narzędzia pomocnicze
+- `grim` `slurp` - zrzuty ekranu (Wayland)
+- `fastfetch` - informacje o systemie
+- `htop` - menedżer procesów
+- `cava` - wizualizacja audio
+- `clock-tui` - zegar TUI
+
+### Aplikacje użytkowe
+- `discord` `spotify` `steam` - komunikacja, muzyka, gry
+- `librewolf-bin` - przeglądarka
+- `visual-studio-code-bin` - edytor kodu
+- `vlc` `gimp` - multimedia i grafika
+- `prismlauncher-git` - launcher Minecraft
+
+### Pozostałe zależności X11
+- `xorg-server` i cała rodzina xorg-* - serwer X11
+- `xorg-xinit` ~/.xinitrc
+- `xorg-xinput` - mysz, touchpad
+- `xdg-utils` `xdg-desktop-portal-hyprland`
