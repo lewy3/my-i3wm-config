@@ -1,0 +1,36 @@
+#do działającego cfg musisz zainstalować i3status-rust i nerd-fonts-complete przez yay (AUR)
+# Ikony z Font Awesome 6
+icons = "awesome6"
+
+# Globalny interwał odświeżania (sekundy)
+interval = 1
+
+# Bloki w pasku (kolejność wyświetlania)
+[[block]]
+block = "net"
+device = "wlan0"  # ZMIEŃ NA SWOJĄ KARTĘ! Sprawdź przez `ip link`
+format = " $icon {$signal_strength $ssid|Wired} $ip "
+format_alt = " $icon ↓$speed_down ↑$speed_up "
+
+[[block]]
+block = "memory"
+format = " $icon $mem_used_percent% "
+format_alt = " $icon $mem_used_percent% ($mem_used/$mem_total) "
+
+[[block]]
+block = "cpu"
+format = " $icon $utilization% "
+
+[[block]]
+block = "sound"
+format = " $icon $volume "
+format_muted = " $icon muted "
+
+[[block]]
+block = "battery"
+format = " $icon $percentage% $time "
+
+[[block]]
+block = "time"
+interval = 5
+format = " $icon $timestamp.datetime(f:'%H:%M') "
