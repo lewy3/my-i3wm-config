@@ -1,1 +1,60 @@
+# wklej to do ~/.config/picom/picom.conf
 
+#################################
+#           BACKEND             #
+#################################
+backend = "glx";
+vsync = true;
+experimental-backends = true;
+
+#################################
+#           SHADOWS             #
+#################################
+shadow = true;
+shadow-radius = 12;
+shadow-offset-x = -7;
+shadow-offset-y = -7;
+shadow-opacity = 0.5;
+
+#################################
+#           FADING              #
+#################################
+fading = true;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+
+#################################
+#     OPACITY & BLUR            #
+#################################
+# Ustawia stałą przezroczystość dla okien nieaktywnych (opcjonalne) [citation:9]
+inactive-opacity = 0.9;
+frame-opacity = 1.0;
+
+# ROZMYCIE TŁA (Blur) [citation:2]
+blur-method = "gaussian";
+blur-size = 8;
+blur-deviation = 5.0;
+
+# Wykluczenie rozmycia dla pasków i pulpitu [citation:2]
+blur-background-exclude = [
+  "window_type = 'dock'",
+  "window_type = 'desktop'"
+];
+
+# REGUŁY PRZEZROCZYSTOŚCI (Przykład: terminal Alacritty ma 85% widoczności) [citation:2][citation:6]
+opacity-rule = [
+  "85:class_g = 'Alacritty'",
+  "95:class_g = 'URxvt'"
+];
+
+#################################
+#        ROUNDED CORNERS        #
+#################################
+rounded-corners = true;
+corner-radius = 10.0;
+
+#################################
+#         EXCLUSIONS            #
+#################################
+# Nie stosuj efektów dla pełnego ekranu (gry, filmy), aby uniknąć spadku FPS [citation:9]
+unredir-if-possible = true;
