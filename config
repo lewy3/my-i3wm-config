@@ -49,7 +49,7 @@ exec --no-startup-id xinput set-prop 9 "libinput Accel Speed" -0.8
 
 #rozdzielczosc i częstotliwość (hz)
 #wklej poniższą komende do terminala jeśli chcesz dostosować rozdzielczość i hz żeby znaleść swój monitor wpisz "xrandr list"
-#xrandr --output NAZWA_WYJŚCIA --mode ROZDZIELCZOŚĆ --rate 100
+#xrandr --output NAZWA_WYJŚCIA --mode ROZDZIELCZOŚĆ --rate 100.00
 
 # === TOP BAR ===
 bar {
